@@ -4,7 +4,7 @@ date = 2024-01-08
 updated = 2024-01-08
 description = "Part 1"
 [taxonomies]
-tags = ["linux", "secure boot", "arch linux"]
+tags = ["linux", "security"]
 +++
 
 My journey began around 2019, when I was preparing for university. I remember, buying the first *"throwaway"* laptop of mine (which later turned about to be one of my faviourite machines when travelling, but more on that on an other time) to experience the joy of Linux.
