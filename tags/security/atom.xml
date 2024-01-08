@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>nopointers.work.blog - security</title>
+    <subtitle>Personal site of Balázs Róbert Börcsök</subtitle>
+    <link href="https://nopointers.work/tags/security/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://nopointers.work"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-01-08T00:00:00+00:00</updated>
+    <id>https://nopointers.work/tags/security/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Creating a (sensibly) secure Linux system for everything.</title>
+        <published>2024-01-08T00:00:00+00:00</published>
+        <updated>2024-01-08T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://nopointers.work/linux-security-01/" type="text/html"/>
+        <id>https://nopointers.work/linux-security-01/</id>
+        
+        <content type="html">&lt;p&gt;My journey began around 2019, when I was preparing for university. I remember, buying the first &lt;em&gt;“throwaway”&lt;&#x2F;em&gt; laptop of mine (which later turned about to be one of my faviourite machines when travelling, but more on that on an other time) to experience the joy of Linux.&lt;&#x2F;p&gt;
+&lt;p&gt;I installed Ubuntu (at the time probably 18 LTS) on it and started my journey. If I am not mistaken one of the main selling points for me was that Linux does not have any viruses for desktop users and it is just so customizable. I actually loved the idea, because due to sailing the seas, I did manage to get myself infected in the past, only my Eset antivirus preventing total annihilation from a ransomware…&lt;&#x2F;p&gt;
+&lt;p&gt;Many years later, I realize that just how naive we are were and still are, thinking that a basic Ubuntu installation is actually secure, and I do not mean Ubuntu specifically (Canonical does actually some really sane defaults), but things that most of us miss.&lt;&#x2F;p&gt;
+&lt;p&gt;Today I use Linux for everything, including gaming, development, making calls, editing text or media and I even host my own public-facing server.&lt;&#x2F;p&gt;
+&lt;p&gt;In this series of scratching my own thoughts on this virtual piece of paper I would like to invite you to explore the following security plot-holes in the story of using desktop Linux:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Booting securely&lt;&#x2F;li&gt;
+&lt;li&gt;Separating users’ and the system’s data&lt;&#x2F;li&gt;
+&lt;li&gt;Securing system services&lt;&#x2F;li&gt;
+&lt;li&gt;Using multifactor authentication&lt;&#x2F;li&gt;
+&lt;li&gt;Securing our browser&lt;&#x2F;li&gt;
+&lt;li&gt;Encryption without passwords&lt;&#x2F;li&gt;
+&lt;li&gt;Sandboxing our programs and systems&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>
