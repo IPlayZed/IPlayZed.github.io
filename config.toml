@@ -7,14 +7,24 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
-#theme="anemone" # TODO: Make this theme work when building GH pages.
 theme = "dose"
+
+taxonomies = [
+    { name = "tags", paginate_by = 5, feed = true },
+]
 
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
+highlight_theme = "visual-studio-dark"
 
 [extra]
 # Put all your custom variables here
-# twitter_card = false # Used for anemone
+social_media = [
+    { name = "GitHub", url = "https://github.com/IPlayZed" },
+    { name = "LinkedIn", url = "https://www.linkedin.com/in/balazs-borcsok-ptr/" },
+    { name = "StackOverflow", url = "https://stackoverflow.com/users/10653163/bal%c3%a1zs-b%c3%b6rcs%c3%b6k", rel = "me" },
+    { name = "Cloud", url = "https://amazingmonkey.ddns.net" }
+]
+default_theme = "light"
