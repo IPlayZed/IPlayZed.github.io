@@ -169,7 +169,7 @@ stack = "10653163"
 
 # do NOT include a trailing slash on the online URL
 online_url = "https://nopointers.work"
-online_indexformat = "elasticlunr_json"# used to restore your preferred index format when offline = false
+online_indexformat = "elasticlunr_json" # used to restore your preferred index format when offline = false
 offline = false # implies uglyurls=true and integrity=false, when true NPM/node will automatically set the path for the base_url, it will build the site, then set the base_url back to what it was.
 
 uglyurls = false # if set to true then links are generated with the full path. eg https://abridge.netlify.app/index.html
