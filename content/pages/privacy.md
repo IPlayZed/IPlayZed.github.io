@@ -8,7 +8,6 @@ draft = false
 
 ## Privacy
 
-- This site is hosted on GitHub Pages, please see the [privacy policy for it](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement).
-- Otherwise the site does not explicitly collect any information.
+- This site is hosted on Cloudflare, please see the [privacy policy for it](https://www.cloudflare.com/privacypolicy/).
 
 **Effective Date:** _8st Jan 2024_
