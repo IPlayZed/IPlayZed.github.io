@@ -67,4 +67,3 @@ Well duh, this is nonsense. What is more - even though it does defult to BIOS -,
 Did you guys enjoy this post? Did you manage to learn something useful? I am looking for any and all feedback and ideas, please hit me up on any of the contacts by clicking the contact page or the social icons at the bottom of the page.
 
 See you in the next post!
-{{ gif(sources=["https://tenor.com/view/peach-and-goma-gif-1151492026803486934"]) }}
