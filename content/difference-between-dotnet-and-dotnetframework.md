@@ -28,3 +28,28 @@ Most developers produce binaries for a given instruction set for a given softwar
 If you have used Gentoo/Slackware/Arch you might know that when building programs from source, you can choose the compilation target to be not generic but optimized for the given platform. This mostly reduces the output binary size and makes sure that it uses all, but only those features available for your current hardware platform. If you restore the system built like this to another computer with a different CPU or upgrade it, these binaries will NOT run. This is because each different model of CPU (no matter how little different it is), uses a different system of instructions on the very lowest level and will not run your code.
 
 Combining all of these, we get something like Apple's Game Porting Toolkit, which can run Windows executables, made for AMD64/IA32 and using the Win32 API (expanded with others like DirectX), and can emulate the hardware on ARM chips of Apple and translate the Windows-specific API calls into MacOS syscalls. Similar to this is Box64 for instance on Linux on ARM.
+
+**Basically, this problem is lifted if we write code which is interpreted/compiled on a common software runtime.** And while it really solves it (like JavaScript in the browser or C# withe the CLR), even in these scenarios, our code is bound to the software platform provided by this additional layer of software abstractions. It is just that we have less to worry about.
+
+## What are the differences?
+
+I will list the main differences you should think about. Of course, there might be additional ones, but in my opinion they can be categorized into one of these. (I am not counting new features, because of course new features will always happen in newer versions, duh.)
+
+1. In .NET Core applications, you can pack the base runtime with the application. This means that it is a lot easier to make portable applications. In .NET Framework based applications, you have to have the .NET version installed on the host system. This also implies, that .NET is no longer a part of Windows as a component of the OS, but rather a freestanding entity.
+2. .NET Core refactored many previously included modules, so the previous point can be made feasibly. This keeps the .NET system small enough to pack it up with the application. For more special needs previously included in the framework, they were made into NuGet packages, so developers can include them in their project easily when needed. NuGet is the official package distribution platform for .NET, similar to the Pyton Package Index.
+3. .NET Core is open source and multiplatform. You can utilize the .NET Core runtime on basically any platform: Windows, Linux distros, BSD distros, Android, IOS, MacOS, etc. You can also create freestanding binaries, which run on microcontrollers even! The Core SDK also provides the `dotnet` command, which provides a command line interface for any operation you would need regarding development, eleminating the need to use Visual Studio (for most of the time). Open sourcing includes all of the GUI frameworks in .NET Framework: WPF, WinForms, Windows UI and Platform Extensions (Take note that these are only available in Core since Core 3.0.)
+
+## So which one should I use?
+
+If you are starting a brand new project, use Core in every case basically! Not only that, try to use the most up-to-date version as possible! By this, you can use the newest feature level of C# and modern, forward thinking features like [MAUI](https://dotnet.microsoft.com/en-us/apps/maui) to build cross-platform applications and reduce the workload on your team.
+
+Of course, if you have a legacy project, stay at that version and make sure to upgrade for security versions.
+
+If you seriously want to port your codebase (but at that point, just create a new one), use [try-convert](https://github.com/dotnet/try-convert), which might solve it. (Note that, the repo is archived and I am not sure if the functionality is still valid.)
+If your application relies or certain technologies, like application domains and technologies based on that like remoting through application domains, there is no direct equivalent to it and it is a breaking change. Also, custom build processes might not work in Core.
+
+As always, my best advice is that if you want to have official support, consult the [.NET Support Policy page](https://dotnet.microsoft.com/en-us/platform/support/policy).
+
+## What's next
+
+In the next blogpost I plan to write up something about Entity Framework, which is one of the main reasons I like working with C#. See you there!
