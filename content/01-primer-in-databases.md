@@ -1,5 +1,5 @@
 +++
-title = "Primer in databases: distr"
+title = "Primer in databases: monolithic or distributed?"
 date = 2024-08-09
 updated = 2024-08-09
 description = ""
